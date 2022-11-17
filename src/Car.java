@@ -5,14 +5,22 @@ public class Car {
 	public String model;
 	public int amountOfFuel;
 
-	public void brake()
+	public void Break()
 	{
 		System.out.println("Car is breaking");
 	}
 	
 	public void accelerate()
 	{
-		System.out.println("Car is accelerating");
+		if(amountOfFuel > 0)
+			{
+				System.out.println("Car is accelerating");
+				amountOfFuel--;
+			}
+		else
+			{
+			System.out.println("Car can't accelerate, lack of fuel");
+			}
 	}
 	
 	public void printData()
@@ -22,4 +30,11 @@ public class Car {
 		System.out.println("Amount of fuel: " + amountOfFuel);
 	}
 	
+	public void refuel(int amount)
+	{
+		System.out.println("Fuel on the tank: " + amountOfFuel);
+		System.out.println("Refuel: " + amount);
+		amountOfFuel += amount;
+		System.out.println("Fuel on the tank after the refuel: " + amountOfFuel);
+	}
 }
