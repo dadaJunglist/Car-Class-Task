@@ -5,6 +5,21 @@ public class Car {
 	public String model;
 	public int amountOfFuel;
 
+	
+	public Car()
+	{
+		brand="";
+		model="";
+		amountOfFuel=0;
+	}
+	
+	public Car(String brand, String model, int fuel)
+	{
+		this.brand=brand;
+		this.model=model;
+		this.amountOfFuel=fuel;
+	}
+	
 	public void Break()
 	{
 		System.out.println("Car is breaking");

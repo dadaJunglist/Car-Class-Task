@@ -13,6 +13,9 @@ public class CarApp {
 		car1.printData();
 		car1.refuel(100);
 		car1.printData();		
+		
+		Car car2 = new Car("BMW", "M1", 300);
+		car2.printData();
 				}
 
 }
